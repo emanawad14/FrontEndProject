@@ -865,47 +865,8 @@
                             </li>
                         </ul>
 
-                        <div class="pt-5">
-                            <div class="mb-6 grid gap-6 xl:grid-cols-1">
-                                <div class="panel h-full">
-                                    <div class="mb-5 flex items-center">
-                                        <h5 class="text-lg font-semibold dark:text-white-light">Add Plan</h5>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <!-- form grid -->
-                                        <form x-data="Add_Merchans" @submit.prevent="Add_Merchans">
-                                            <div class="grid grid-cols-1 justify-between gap-5 sm:flex">
-                                                <input type="text" placeholder="Enter Title" class="form-input" x-model="title" required />
-                                                <input type="text" placeholder=" Enter Count Of Days" class="form-input" x-model="mouth" required />
-                                                <input type="text" placeholder="Enter Price" class="form-input" x-model="price" required />
-                                                <select id="ctnSelect1" class="form-select text-white-dark" x-model="level" required>
-                                                    <option>level</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                </select>
-                                            </div>
-                                            <textarea
-                                                id="ctnTextarea"
-                                                rows="3"
-                                                class="form-textarea mt-6"
-                                                x-model="discription"
-                                                placeholder="Enter Discription"
-                                                required
-                                            ></textarea>
-
-                                            <button type="submit" class="btn btn-primary mt-6">Create</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div x-data="multipleTable" x-init="fetchManagers()">
-                                <div class="panel mt-6">
-                                    <h5 class="mb-5 text-lg font-semibold dark:text-white-light md:absolute md:top-[25px] md:mb-0">Plans</h5>
-                                    <table id="myTable1" class="whitespace-nowrap"></table>
-                                </div>
-                            </div>
-                        </div>
+                       
+                        
                     </div>
                 </div>
                 <!-- end main content section -->
